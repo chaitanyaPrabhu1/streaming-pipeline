@@ -1,0 +1,6 @@
+{
+  "source": "wikimedia",
+  "sse_url": "https://stream.wikimedia.org/v2/stream/recentchange",
+  "window_seconds": 60,
+  "firehose_batch_size": 200
+}

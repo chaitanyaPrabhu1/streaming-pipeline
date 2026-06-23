@@ -1,0 +1,4 @@
+# Lambda consumer runtime deps. pyarrow is supplied in AWS by the managed
+# "AWSSDKPandas" layer; boto3 is in the Lambda runtime already. The producer
+# uses only the standard library (urllib) to read the SSE stream.
+pyarrow>=14.0.0

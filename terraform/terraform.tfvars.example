@@ -1,0 +1,16 @@
+# Copy to terraform.tfvars and fill in. `terraform apply` picks it up automatically.
+
+project = "wiki-stream"
+region  = "us-east-1"
+
+# AWS-managed pandas/pyarrow layer ARN for python3.11 in your region.
+# Look up the current version at:
+#   https://aws-sdk-pandas.readthedocs.io/en/stable/layers.html
+pandas_layer_arn = "arn:aws:lambda:us-east-1:336392948345:layer:AWSSDKPandas-Python311:13"
+
+# Optional: email for billing + pipeline alarms (leave "" to skip).
+alarm_email            = ""
+monthly_cost_alarm_usd = 5
+
+shard_count            = 1
+events_expiration_days = 30
